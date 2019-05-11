@@ -1,0 +1,267 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background: #642b73;
+  background: linear-gradient(to bottom, #c6426e, #642b73);
+  display: flex;
+  font-family: "Open Sans", sans;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1800px;
+  text-align: center;
+  margin: 0;
+}
+.test {
+  width: 48%;
+  height: 100%;
+  background: #fff ;
+  background-position: center;
+  background-size: 100% 100%;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 70vh;
+
+}
+.gallery > div{
+  width: 23vh;
+  height: 30vh;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+.c {
+  margin: 2px;
+  border-radius: 15px;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+}
+.bg-img{
+  width: 500px;
+}
+.choose-background-container {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.choose-background {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
+  background: linear-gradient(to bottom, #e984a5, #cb82dd);
+  border-radius: 20px;
+  overflow: auto;
+  z-index: 121251521;
+}
+.choose-accessoires-container {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.choose-accessoires {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
+  background: linear-gradient(to bottom, #e984a5, #cb82dd);
+  border-radius: 20px;
+  overflow: auto;
+  z-index: 121251521;
+}
+.close {
+  position: absolute;
+  left: 200px;
+  top: 120px;
+  z-index: 120;
+  font-size: 100px;
+  border: 2px solid red;
+  border-radius: 20px;
+  color: red;
+}
+.acc > div {
+  width: 100px;
+  height: 100px;
+}
+.acc > img{
+  width: 100%;
+  height: 100%;
+}
+/* accessoires preview */
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: 0.1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1000000000000000000;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7, 1.7);
+  transition: 0.3s transform;
+}
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+/* buttons */
+
+.all {
+  display: inline;
+  -webkit-perspective: 10px;
+  perspective: 10px;
+  -webkit-transform: perspective(300px) rotateX(20deg);
+  transform: perspective(300px) rotateX(20deg);
+  will-change: perspective;
+  -webkit-perspective-origin: center center;
+  perspective-origin: center center;
+  transition: all 1.3s ease-out;
+  justify-content: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.all:hover {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  transition: all 0.8s ease-in;
+  -webkit-transform: perspective(10000px) rotateX(0deg);
+  transform: perspective(10000px) rotateX(0deg);
+}
+.all:hover .text {
+  opacity: 1;
+}
+.all:hover > div {
+  opacity: 1;
+  transition-delay: 0s;
+}
+.all:hover .explainer {
+  opacity: 0;
+}
+
+.center {
+  width: 100px;
+  height: 75px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #58d;
+  cursor: pointer;
+  background-blend-mode: color-burn;
+}
+.center:hover {
+  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  background-color: #ccf;
+}
+
+.shaps {
+  opacity: 1;
+  background-image: url(../images/shaps.png);
+}
+
+.text {
+  opacity: 1;
+  background-image: url(../images/shaps.png);
+}
+.free-drawing {
+  opacity: 1;
+  background-image: url(../images/freedrawing.png);
+}
+.background {
+  opacity: 1;
+  background-image: url(../images/background.png);
+}
+.accessoires {
+  opacity: 1;
+  background-image: url(../images/flour.png);
+}
+.upload-img {
+  opacity: 1;
+  background-image: url(../images/chimg.png);
+}
+.upload-background {
+  opacity: 1;
+  background-image: url(../images/chbackground.png);
+}
+
+.explainer {
+  font-weight: 200;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background-color: #303050;
+  background-image: radial-gradient(circle at center top, #cce, #33a);
+  border-radius: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons */
+.preview-btn{
+  background: #303050;
+  position: absolute;
+  left: 45%;
+  top: -10%;
+}
