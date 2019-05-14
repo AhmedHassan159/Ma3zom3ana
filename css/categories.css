@@ -4,6 +4,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+.logo{
+  width:250px;
+  height: 200px;
+  
+  z-index: 23132123123151;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
 .navigation
 {
     margin: 0px;

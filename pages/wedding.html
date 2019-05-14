@@ -10,6 +10,9 @@
   </head>
   <body>
      <!-- choose  background Images  -->
+     <div class="logo">
+        <img src="../images/logo2.png" alt="logo" > 
+      </div>
     <div class="choose-background-container">
       <button class="close">x</button>
 
@@ -106,10 +109,48 @@
           </div>
         </div>
       </div>
-  
+<!--   choose chapes to the work space  -->
 
+<div class="choose-shaps-container">
+  <button class="close">x</button>
 
+  <div class="choose-shaps">
+    <h1>اختار شكل يعجبك</h1>
 
+    <div class="gallery cf">
+     
+      <div>
+        <img class="shap img-fluid"
+          src="../images/rectangle.png" kind="rectangle"
+        />
+      </div>
+      
+     
+      <div>
+        <img class="shap img-fluid"
+          src="../images/triangles.svg" kind="triangle"
+        />
+      </div>
+      
+     
+      <div>
+        <img class="shap img-fluid"
+          src="../images/circle.png" kind="circle"
+        />
+      </div>
+      
+     
+      <div>
+        <img class="shap img-fluid"
+          src="../images/polyg.png" kind="polyg"
+        />
+      </div>
+      
+     
+     
+    </div>
+  </div>
+</div>
 
     <div class="container">
       <div class="row">
@@ -157,7 +198,7 @@
         <div class="col-md-6">
           <div class="main-header">
             <div class="test" id="workSpace">
-              <button class="preview-btn"><a href="../pages/preview.html">Preview</a></button>
+              <button class="preview-btn"><a href="../pages/preview.html">عرض </a></button>
 
                     <canvas class="c" id="c" width="540" height="640">
                         
@@ -168,7 +209,29 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <div class="control" style="padding:40px">
+            <span>مساحة الشكل</span>
+            <input type="range" id="scale-control" value="1" min="0.1" max="3" step="0.1"><br>
+            <span>انحراف الشكل افقيا</span>
+            <input type="range" id="skewX-control" value="0" min="0" max="80" step="1"><br>
+            <span>انحراف الشكل رائسيا</span>
+
+            <input type="range" id="skewY-control" value="0" min="0" max="80" step="1">
+            <br>
+            <button id="remove" > امسح</button>
+            <h1 id="value">الالوان</h1>
+            <div class="colors">
+              <div class="color red" mycolor="#f00"></div>
+              <div class="color green" mycolor="#0f0"></div>
+              <div class="color blue" mycolor="#00f"></div>
+              <div class="color teal" mycolor="#008080"></div>
+              <div class="color aqua" mycolor="#0ff" ></div>
+            </div>
+          
+          </div>
+          
+        </div>
       </div>
     </div>
     <script src="../js/fabric.min.js"></script>
